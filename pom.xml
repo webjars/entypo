@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>entypo</artifactId>
-    <version>4339492-SNAPSHOT</version>
+    <version>4339492</version>
     <name>Entypo</name>
     <description>WebJar for Entypo</description>
     <url>http://webjars.org</url>
@@ -36,7 +36,7 @@
         <url>http://github.com/webjars/entypo</url>
         <connection>scm:git:https://github.com/webjars/entypo.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/entypo.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>entypo-4339492</tag>
     </scm>
     
     <properties>
@@ -80,8 +80,8 @@
                                 <unzip src="${project.build.directory}/Entypo.zip" dest="${project.build.directory}" />
                                 <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/Entypo/@font-face/Entypo Social @font-face" excludes=".DS_Store"/>
-                                    <fileset dir="${project.build.directory}/Entypo/@font-face/Entypo @font-face" excludes=".DS_Store"/>
+                                    <fileset dir="${project.build.directory}/Entypo/@font-face/Entypo Social @font-face" excludes=".DS_Store" />
+                                    <fileset dir="${project.build.directory}/Entypo/@font-face/Entypo @font-face" excludes=".DS_Store" />
                                 </move>
                             </target>
                         </configuration>
